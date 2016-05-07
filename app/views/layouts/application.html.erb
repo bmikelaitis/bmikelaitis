@@ -17,13 +17,11 @@
   <%= csrf_meta_tags %>
 </head>
 
-<body>
+<body class="background-clor5">
 
 <%= render 'layouts/navigation' if !@skip_navigation %>
-
 <%= yield %>
-<div class="">
 <%= render 'layouts/footer' %>
-</div>
+
 </body>
 </html>
