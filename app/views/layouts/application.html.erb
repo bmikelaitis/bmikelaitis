@@ -19,11 +19,11 @@
 
 <body>
 
-<%= render 'layouts/navigation' %>
+<%= render 'layouts/navigation' if !@skip_navigation %>
 
 <%= yield %>
-
+<div class="">
 <%= render 'layouts/footer' %>
-
+</div>
 </body>
 </html>

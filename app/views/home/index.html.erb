@@ -1,2 +1,100 @@
 <title>Welcome to Brandon's Website</title>
-<p>hi!  This is now live!</p>
+<div class="ui equal width grid">
+        <div>
+            <div class="column">
+                    <div class="ui clearing segment">
+                        <%= link_to about_me_path do %>
+                          <div class="ui circular segment">
+                          <h2 class="ui header">
+                            <i class="user icon"></i> 
+                            <div class="sub header">About Me</div>
+                          </h2>
+                          </div>
+                        <% end %>
+                    </div>
+            </div> 
+            <div class="row">       
+            <div class="column">        
+                    <div class="ui clearing segment">
+                        <%= link_to skills_path do %>
+                          <div class="ui circular segment">
+                          <h2 class="ui header">
+                            <i class="star icon"></i> 
+                            <div class="sub header">Skills</div>
+                          </h2>
+                          </div>
+                        <% end %>
+                    </div>
+            </div>
+            </div>
+            
+            <div class="row"> 
+            <div class="column row">
+                    <div class="ui clearing segment">
+                        <%= link_to education_path do %>
+                          <div class="ui circular segment">
+                          <h2 class="ui header">
+                            <i class="university icon"></i> 
+                            <div class="sub header">Education</div>
+                          </h2>
+                          </div>
+                        <% end %>
+                    </div>    
+            </div>
+            </div>
+        </div>
+    
+        <div>
+            <div class="column">
+                <img src="images/profile.jpg" alt="Profile Picture" width="260" height="390" />
+            </div>
+        </div>
+    
+        <div>
+        
+        <div>  
+            <div class="column">    
+            <div class="ui clearing segment">
+                <%= link_to experience_path do %>
+                  <div class="ui circular segment">
+                  <h2 class="ui header">
+                    <i class="rocket icon"></i> 
+                    <div class="sub header">Experience</div>
+                  </h2>
+                  </div>
+                <% end %>
+            </div>
+            </div>
+            
+            <div class="row">       
+            <div class="column"> 
+            <div class="ui clearing segment">
+                <%= link_to portfolio_path do %>
+                  <div class="ui circular segment">
+                  <h2 class="ui header">
+                    <i class="travel icon"></i> 
+                    <div class="sub header">Portfolio</div>
+                  </h2>
+                  </div>
+                <% end %>
+            </div>
+            </div>
+            </div>
+            
+            <div class="row">       
+            <div class="column"> 
+            <div class="ui clearing segment">
+                <%= link_to contact_path do %>
+                  <div class="ui circular segment">
+                  <h2 class="ui header">
+                    <i class="mail outline icon"></i> 
+                    <div class="sub header">Contact Me</div>
+                  </h2>
+                  </div>
+                <% end %>
+            </div>
+            </div>
+            </div>
+        </div>  
+</div>
+</div>

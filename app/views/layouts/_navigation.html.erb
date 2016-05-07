@@ -1,4 +1,23 @@
-<%= link_to "Home", root_path, class:"btn btn-default btn-primary" %>
-<%= link_to "Education", education_path, class:"btn btn-default btn-primary" %>
-<%= link_to "Experience", experience_path, class:"btn btn-default btn-primary" %>
-<%= link_to "Contact", contact_path, class:"btn btn-default btn-primary" %>
+<div class="ui large top fixed menu row nav-bar">
+  <div class="ui container center center-text">
+      
+    <div class="left menu">  
+        <i class="item "><%= link_to "About Me", about_me_path %></i>    
+        <i class="item "><%= link_to "Skills", skills_path %></i>
+        <i class="item "><%= link_to "Education", education_path %></i>
+    </div>
+    
+    <div class="home-icon">
+    <%= link_to root_path do %>
+                            <i class="home icon center-text"></i> 
+    <% end %>
+    </div>
+    
+    <div class="right menu">
+        <i class="item "><%= link_to "Experience", education_path %></i>
+        <i class="item "><%= link_to "Portfolio", portfolio_path %></i>    
+        <i class="item "><%= link_to "Contact", contact_path %></i>
+    </div>
+
+  </div>
+</div>

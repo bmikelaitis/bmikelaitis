@@ -9,7 +9,9 @@ Rails.application.routes.draw do
   get '/contact', to: 'contact#index'
   get '/education', to: 'education#index'
   get '/experience', to: 'experience#index'
-  
+  get '/skills', to: 'skill#index'
+  get '/about_me', to: 'about#index'
+  get '/portfolio', to: 'portfolio#index'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
