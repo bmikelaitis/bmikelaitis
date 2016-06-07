@@ -1,6 +1,25 @@
 <title>My Skills</title>
 <div class="padding-top">
- <p>My mother fucking skills..</p>   
-    
-    
+ <p class="white-title" >My skills</p>  
+ 
+     <div class="parent">Spanish <div class=""><i class=" inverted star icon"></i> <i class=" inverted star icon"></i></div>
+        <div class="description-star"> Spanish is not my strongest skill</div>
+     </div>
+       
+
+
+
+
+
+
 </div>
+
+<script>
+    $(".parent").mouseover(function() {
+    $(this).children(".description-star").show();
+}).mouseout(function() {
+    $(this).children(".description-star").hide();
+});
+
+
+</script>

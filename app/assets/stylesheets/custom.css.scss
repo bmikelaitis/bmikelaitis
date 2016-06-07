@@ -13,6 +13,11 @@
     position: relative;
     display: inline-block;
     min-width: 800px;
+    opacity: 0.9;
+}
+
+a:link, a:visited {
+    color: #555555;
 }
 
 .center {
@@ -37,32 +42,20 @@
     width: 250px;
 }
 
-.background-clor1 {
-  background-color:#3671b3;
-}
-
-.background-clor2 {
-  background-color:#4b7096;
-}
-
-.background-clor3 {
-  background-color:#b9d5f0;
-}
-
-.background-clor4 {
-  background-color:#367cb3;
-}
 
 .background-clor5 {
-  background-color:#29aae3;
+  background: image-url('back.png');
+    //background-repeat: repeat-x;
 }
 .image-border {
-   padding:1px;
-   border:1px solid #FFFFFF;
+   padding:0px;
+   border:10px solid #FFFFFF;
+   border-radius: 30px;
 
 }
 .center-image {
-    padding-left: 20px;
+    padding-left: 40px;
+    padding-top: 20px;
 }
 
 .footer {
@@ -73,6 +66,7 @@
   padding: 1rem;
   text-align: center;
   color:white;
+  z-index: -4;
 }
 .padding-bottom{
         padding-top: 50px;
@@ -86,19 +80,23 @@
     height:141px;
     background:#FFFFFF;
     padding:1px;
-    border:10px solid #29aae3;
-    //border-radius: 25px;
+    //border:10px solid #555555;
+    border-radius: 25px;
+}
+.rect-space{
+    margin-top:15px;
 }
 
 #circle {
 	width: 70px;
 	height: 70px;
-	background: #29aae3;
+	background: image-url('back.png');
 	//-moz-border-radius: 50px;
 	//-webkit-border-radius: 50px;
 	border-radius: 30px; //60 oringally for circle
-	margin-left:80px;
-	margin-top:15px;
+	margin-left:90px;
+	margin-top:20px;
+	
 }
 
 #icon-centered {
@@ -119,7 +117,7 @@
 .white {
     font-family:Verdana, Geneva, sans-serif;
     font-size: 1.3em;
-    color:#29aae3;
+    color: #555555;
     font-weight: bold;
     text-align: center;
     padding-top: 7px;
@@ -131,6 +129,207 @@
     font-weight: bold;
     text-align: center;
     position:relative;
-    text-align: center;
     
+}
+
+.white-about {
+    font-family:Verdana, Geneva, sans-serif;
+    font-size: 2.1em;
+    color:#FFFFFF;
+    font-weight: bold;
+    position:relative;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+.white-about-text {
+    font-family:Verdana, Geneva, sans-serif;
+    font-size: 1em;
+    color:#FFFFFF;
+    position:relative;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.image-container {
+    min-width: 200px;
+    min-height: 350px;
+    max-height: 350px;
+    background: image-url('back.png');
+}
+
+.image-size {
+    max-width: 100%;
+    max-height: 350px;
+}
+
+.big-ass{
+    min-width: 200px;
+    min-height: 350px;
+    max-height: 350px;
+}
+
+.white-education {
+    font-family:Verdana, Geneva, sans-serif;
+    font-size: 1.5em;
+    color:#FFFFFF;
+    
+}
+
+.card-profile {
+    position: relative;
+    padding-right: 80px;
+    float: right;
+}
+
+.arrow-pictures {
+    font-size: 2em;
+    color:#FFFFFF;
+    
+}
+.arrow-pictures a:hover{
+    font-weight:bold;
+    color:#FFFFFF;
+}
+
+.star-1{
+    font-weight:bold;
+    color:#FFFFFF;
+}
+
+.parent {
+    padding:5px;
+    width:60px;
+}
+
+.description-star {
+    display:none;
+    position:absolute;
+    width:400px;
+    height:400px;
+}
+
+.smaller-margin {
+    width: 750px;
+    margin: auto; 
+    
+}
+
+.container-1 {
+    min-width: 600px;
+    max-width: 900px;
+    margin:auto;
+}
+//playing around after this..  
+
+
+.accordion dl,
+.accordion-list {
+   border:1px solid white; //accordion border color
+   &:after {
+       content: "";
+       display:block;
+       height:1em;
+       width:100%;
+       background-color:darken(white, 10%); // bottom border color
+     }
+}
+.accordion dd,
+.accordion__panel {
+   background-color:#eee; //color of background of text when opened
+   font-size:1em;
+   line-height:1.5em; 
+}
+.accordion p {
+  padding:1em 2em 1em 2em;
+}
+
+.accordion {
+    position:relative;
+    background-color:#eee; //color of background of div behind text when opened
+}
+
+.accordionTitle,
+.accordion__Heading {
+ background-color:white; //color of header when collasped
+   text-align:center;
+     font-weight:700; 
+          padding:2em;
+          display:block;
+          text-decoration:none;
+          color:#fff;
+          transition:background-color 0.5s ease-in-out;
+  border-bottom:1px solid darken(white, 5%); // the border color
+  &:before {
+   content: "+";
+   font-size:1.5em;
+   line-height:0.5em;
+   float:left; 
+   transition: transform 0.3s ease-in-out;
+  }
+  &:hover {
+    background-color:darken(white, 10%); //color of header when hovered
+  }
+}
+.accordionTitleActive, 
+//when its expanded color of header
+.accordionTitle.is-expanded {
+   background-color:darken(white, 10%);
+    &:before {
+     
+      transform:rotate(-225deg);
+    }
+}
+.accordionItem {
+    height:auto;
+    overflow:hidden; 
+    //SHAME: magic number to allow the accordion to animate
+    
+     max-height:50em;
+    transition:max-height 1s;   
+ 
+    
+    @media screen and (min-width:48em) {
+         max-height:15em;
+        transition:max-height 0.5s
+        
+    }
+    
+   
+}
+ 
+.accordionItem.is-collapsed {
+    max-height:0;
+}
+.no-js .accordionItem.is-collapsed {
+  max-height: auto;
+}
+.animateIn {
+     animation: accordionIn 0.45s normal ease-in-out both 1; 
+}
+.animateOut {
+     animation: accordionOut 0.45s alternate ease-in-out both 1;
+}
+@keyframes accordionIn {
+  0% {
+    opacity: 0;
+    transform:scale(0.9) rotateX(-60deg);
+    transform-origin: 50% 0;
+  }
+  100% {
+    opacity:1;
+    transform:scale(1);
+  }
+}
+
+@keyframes accordionOut {
+    0% {
+       opacity: 1;
+       transform:scale(1);
+     }
+     100% {
+          opacity:0;
+           transform:scale(0.9) rotateX(-60deg);
+       }
 }

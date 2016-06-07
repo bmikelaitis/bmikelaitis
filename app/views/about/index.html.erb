@@ -1,6 +1,92 @@
 <title>About Me</title>
-<div class="padding-top">
-    
-    <p>about</p>
-    
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+</style>
+<div class="padding-top" style="min-width: 800px;">
+  <div>
+    <div class="padding-top card-profile">
+      <div class="ui card card-profile">
+      <div class="image-container">
+        <img class="mySlides image-size" src="images/beta.jpg" style="width:100%">
+        <img class="mySlides image-size" src="images/profile_card.jpg" style="width:100%">
+        <img class="mySlides image-size" src="images/speech.jpg" style="width:100%">
+        <img class="mySlides image-size" src="images/dad.jpg" style="width:100%">
+        <img class="mySlides image-size" src="images/family.jpg" style="width:100%">
+        <img class="mySlides image-size" src="images/pv_friends.jpg" style="width:100%">
+        <div class="w3-center w3-section w3-large w3-text-white w3-display-bottomleft" style="width:100%">
+        <a class="w3-btn-floating arrow-pictures" style="position:absolute;top:35%;left:0" onclick="plusDivs(-1)">❮</a>
+        <a class="w3-btn-floating arrow-pictures" style="position:absolute;top:35%;right:0" onclick="plusDivs(1)">❯</a>
+          
+        </div>
+      </div>
+        <div class="content">
+          <a class="header">Brandon Mikelaitis</a>
+          <div class="meta">
+            <span class="date">Born in 1994</span>
+          </div>
+          <div class="description">
+            Brandon is currently completing his Master's in Management Information Systems at the Eller College of Management.
+          </div>
+        </div>
+        <div class="extra content">
+          <a>
+            <i class="university icon"></i>
+            University of Arizona
+          </a>
+        </div>
+      </div>
+    </div>
 </div>
+
+<div>
+  <div>
+  <p class="white-about"> A Little About me...</p>
+  </div>
+  
+  <div>
+    <p class="white-about-text ">
+       My name is Brandon Mikelaitis and I am currently completing my Master’s degree in Management Information Systems at the University of Arizona in the Eller College of Management.  
+       I love learning new web technologies and spend a lot of my free time teaching myself.
+    </p>
+  </div>
+  </div>
+</div>
+
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); // Change image every 4 seconds
+}
+</script>
