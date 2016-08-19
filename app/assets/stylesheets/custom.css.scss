@@ -221,6 +221,15 @@ a:link, a:visited {
     max-width: 900px;
     margin:auto;
 }
+
+
+.logo_float {
+    float: left;
+}
+.float-time{
+    float: right;
+}
+
 //playing around after this..  
 
 
@@ -333,3 +342,4 @@ a:link, a:visited {
            transform:scale(0.9) rotateX(-60deg);
        }
 }
+

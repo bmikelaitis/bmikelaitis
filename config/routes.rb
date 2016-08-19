@@ -12,6 +12,9 @@ Rails.application.routes.draw do
   get '/skills', to: 'skill#index'
   get '/about_me', to: 'about#index'
   get '/portfolio', to: 'portfolio#index'
+  get "/facebook" => redirect("https://www.facebook.com/brandon.mikelaitis")
+  get "/github" => redirect("https://github.com/bmikelaitis")
+  get "/linkedin" => redirect("https://www.linkedin.com/in/brandon-mikelaitis-a6295942")
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
